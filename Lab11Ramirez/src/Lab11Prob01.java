@@ -26,12 +26,8 @@ public class Lab11Prob01 {
     				int zipCode = input.readInt();
     				double salary = input.readDouble();
     				
-    				System.out.println("Age: "+ age);
-    				System.out.println("Name: "+ name);
-    				System.out.println("Address: "+ address);
-    				System.out.println("Zip Code: "+ zipCode);
-    				System.out.println("Salary: "+ salary);
-    				System.out.println();
+    				System.out.printf("%d %s %s %d %.2f%n",
+    				        age, name, address, zipCode, salary);
     				output.writeInt(age);
     				output.writeUTF(name);
     				output.writeUTF(address);
@@ -43,7 +39,6 @@ public class Lab11Prob01 {
     		}
     			
     		}
-    		System.out.println("File copied.");
     		
     	}  catch (IOException e) {
 System.out.println("Error: "+ e.getMessage());		}

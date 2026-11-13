@@ -63,14 +63,10 @@ public class Person implements Comparable<Person>, Serializable {
 	}
 	@Override
 	public String toString() {
-		NumberFormat currency = 
-				NumberFormat.getCurrencyInstance(Locale.US);
-		 return "Age: " + age +
-	               "\nName: " + name +
-	               "\nAddress: " + address +
-	               "\nZip Code: " + zipCode +
-	               "\nSalary: " + currency.format(salary);
+	    return age + " " + name + " " + address + " "
+	            + zipCode + " " + String.format("$%,.2f", salary);
+	}
 	}
 	
 
-}
+
