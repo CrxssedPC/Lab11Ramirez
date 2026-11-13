@@ -1,3 +1,14 @@
+/**
+* File: Lab11Prob02.java
+* Class: CSCI 1302
+* Author: Omar Ramirez
+* Created on: Nov 13, 2026
+* Last Modified: Nov 13, 2026
+* Description: Create a Person class that contains data fields for
+all the information described in the binary input file in Problem 1. You will use this class to
+populate an ArrayList of Person, sort it in a specific order, then write that sorted Person
+data to a binary file.
+*/
 import java.io.*;
 import java.util.ArrayList;
 import java.util.Collections;

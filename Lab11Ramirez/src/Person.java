@@ -1,3 +1,12 @@
+/**
+* File: Person.java
+* Class: CSCI 1302
+* Author: Omar Ramirez
+* Created on: Nov 13, 2026
+* Last Modified: Nov 13, 2026
+* Description: Your program will read this data file into a Java program, display the contents
+to the Console, then write an exact copy of the data to another file.
+*/
 import java.io.Serializable;
 import java.text.NumberFormat;
 import java.util.Locale;

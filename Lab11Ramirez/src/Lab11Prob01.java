@@ -1,4 +1,13 @@
 import java.io.*;
+/**
+* File: Lab11Prob01.java
+* Class: CSCI 1302
+* Author: Omar Ramirez
+* Created on: Nov 13, 2026
+* Last Modified: Nov 13, 2026
+* Description: Your program will read this data file into a Java program, display the contents
+to the Console, then write an exact copy of the data to another file.
+*/
 public class Lab11Prob01 {
     public static void main(String[] args) {
     	String inputFile = "src/people.dat";
