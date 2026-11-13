@@ -31,21 +31,16 @@ public class Lab11Prob03 {
     		}
     			
     		}
-    		System.out.println("File copied.");
     		
     	}  catch (IOException e) {
 System.out.println("Error: "+ e.getMessage());		
 }
     	Collections.sort(people);
-    	try(
-    			DataOutputStream output = new DataOutputStream(new FileOutputStream(outputFile));
-    			){
-    		for (Person person : people) {
-    			System.out.println(person.toString());
-    			System.out.println();
-    			output.writeUTF(person.toString());
+    	try(ObjectOutputStream output = new ObjectOutputStream(
+    			new FileOutputStream(outputFile))){
+    			for(Person person: people) {
+    			output.writeObject(person);
     		}
-    		System.out.println("Sorted file created");
     	}catch (IOException e) {
     		System.out.println("Error: "+ e.getMessage());	
     	
