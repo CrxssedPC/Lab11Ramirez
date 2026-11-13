@@ -1,4 +1,13 @@
-import java.io.*;
+
+/**
+* File: Lab11Prob03.java
+* Class: CSCI 1302
+* Author: Omar Ramirez
+* Created on: Nov 13, 2026
+* Last Modified: Nov 13, 2026
+* Description: You will copy and modify your existing
+problem so that it writes object instances to the binary file instead of String data.
+*/import java.io.*;
 import java.util.ArrayList;
 import java.util.Collections;
 public class Lab11Prob03 {
